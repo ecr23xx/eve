@@ -1,0 +1,15 @@
+.vscode
+*.ipynb
+*.ipynb_checkpoints
+**/*.pyc
+**/__pycache__
+
+build/
+dist/
+*.so
+*.egg-info
+
+data/
+scripts/
+logs
+final
