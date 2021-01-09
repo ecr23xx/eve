@@ -1,0 +1,27 @@
+MODEL:
+  NUM_CLASSES: 19
+  ARCHITECTURE: "minkunet"
+
+DATASETS:
+  TRAIN: "semantic_kitti_train"
+  VAL: "semantic_kitti_val"
+  TEST: "semantic_kitti_test"
+
+INPUT:
+  VOXEL_SIZE: 0.05
+  NUM_POINTS: 80000
+
+DATALOADER:
+  NUM_WORKERS: 16
+
+SOLVER:
+  MAX_ITER: 15000
+  BASE_LR: 0.24
+  SCHEDULE: "half_period_cosine"
+  PCS_PER_GPU_TRAIN: 3
+  LOG_PERIOD: 50
+  EVAL_PERIOD: 1000
+  CHECKPOINT_PERIOD: 2000
+
+LOGS:
+  DIR: "logs/semantic_kitti/minkunet"

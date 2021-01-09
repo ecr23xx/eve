@@ -1,0 +1,8 @@
+h5py
+MinkowskiEngine
+tensorboard
+torch==1.3.0
+tqdm
+yacs
+plyfile
+scipy
